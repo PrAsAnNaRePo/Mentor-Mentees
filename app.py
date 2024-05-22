@@ -15,7 +15,7 @@ if "messages" not in st.session_state:
     st.session_state.messages = [
         {
             'role': 'system',
-            'content': "you'll be give a question and the answer for that question by user.  you have to try to make a other new questions based on the topic the they are discussing. Generate a single further questions that continues in the flow of the Q&A. Try this for full conversation. Again, please generate only one follow up question for each conversation."
+            'content': "you'll be give a question and the answer for that question by user.  you have to try to make a other new questions based on the topic the they are discussing. Generate a single further questions that continues in the flow of the Q&A. Try this for full conversation. Again, please generate only one follow up question for each conversation. Also make sure that you are returning **only the question**, do not include any other text like 'sure here is the question' or 'further question is below'. Don't include any other contents, just question."
         }
     ]
 
